@@ -1,6 +1,10 @@
 import java.util.Collection;
 import java.util.Iterator;
 
+/**
+ * @author Miquel Pons
+ * @version 1.0
+ */
 public class Matricula {
 
     public static final int INT = 15;
@@ -11,8 +15,17 @@ public class Matricula {
     private int curs = 0;
     private Collection assignatures;
 
+
     public Matricula(){}
 
+    /**
+     * @param id
+     * @param nom
+     * @param cognoms
+     * @param dni
+     * @param curs
+     * @param assignatures
+     */
     public Matricula(long id, String nom, String cognoms, String dni, int curs, Collection assignatures) {
         this.id = id;
         this.nom = nom;
@@ -22,6 +35,9 @@ public class Matricula {
         this.assignatures = assignatures;
     }
 
+    /**
+     * @return Aquesta funcio retornara el cost final de la matricula
+     */
     public float costMatricula(){
 
         //Ja que les dues variables s'inicialitzen amb 0, he pensat a crear una variable final

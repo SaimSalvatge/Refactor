@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 
+/**
+ * @author mponss
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * @param args
+     * @see Matricula
+     * @see Assignatura
+     */
     public static void main(String[] args) {
         Assignatura ass1 = new Assignatura(1,"Xarxes",150,6,true);
         Assignatura ass2 = new Assignatura(2,"Sistemes Operatius",100,4,true);

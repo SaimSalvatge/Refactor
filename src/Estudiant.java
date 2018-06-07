@@ -1,6 +1,10 @@
 import java.util.Collection;
 import java.util.Iterator;
 
+/**
+ * @author mponss
+ * @version 1.0
+ */
 public class Estudiant {
     public long id = 0;
     private String nom = "";
@@ -9,6 +13,12 @@ public class Estudiant {
 
     public Estudiant(){}
 
+    /**
+     * @param id
+     * @param nom
+     * @param cognoms
+     * @param dni
+     */
     public Estudiant(long id, String nom, String cognoms, String dni) {
         this.id = id;
         this.nom = nom;
