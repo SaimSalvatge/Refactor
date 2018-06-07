@@ -24,6 +24,8 @@ public class Matricula {
 
     public float costMatricula(){
 
+        //Ja que les dues variables s'inicialitzen amb 0, he pensat a crear una variable final
+        //per tal de que sempre sigui el mateix nombre i no es pugui modificar, però si referenciar
         final int i = 0;
         float cost = i;
         int credits = i;
