@@ -1,9 +1,9 @@
 import java.util.Collection;
-import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Matricula {
 
+    public static final int INT = 15;
     public long id = 0;
     private String nom = "";
     private String cognoms = "";
@@ -24,15 +24,16 @@ public class Matricula {
 
     public float costMatricula(){
 
-        float cost = 0;
-        int credits = 0;
+        final int i = 0;
+        float cost = i;
+        int credits = i;
 
         for (Iterator iter = assignatures.iterator(); iter.hasNext();) {
             Assignatura element = (Assignatura) iter.next();
             credits = credits + element.credits;
         }
 
-        cost = credits * 15;
+        cost = credits * INT;
         return cost;
     }
 
